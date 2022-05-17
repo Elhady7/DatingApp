@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 using APi.Data;
 using APi.Entities;
@@ -29,6 +31,8 @@ namespace APi.Controllers
       
       return await  _context.Users.FindAsync(id);
   }
+  
+
     
  
 }
